@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import batpuppy_cover from '../batpuppy_cover.png';
 
 export default function BatpuppyHome(props){
-    const [emailAddress, setPuppyName] = useState('batpuppybook@gmail.com')
+    const [emailAddress] = useState('batpuppybook@gmail.com')
     // const [counter, setCounter] = useState(0)
     // const [color, setColor] = useState('green')
     // const handleClick = () => {
@@ -29,12 +28,6 @@ export default function BatpuppyHome(props){
         <p>Puppy's name is {puppyName}</p>
         <p>I've clicked {counter} times</p>
         <button onClick={handleClick} style={{color: color}}>Change BP's name to Brad</button><br></br><br></br> */}
-        <img 
-        src={batpuppy_cover} 
-        alt="Batpuppy flying with girl"
-        width="330"
-        height="300"
-        />
         <p>Questions? Reach out to us: <a href="mailto:batpuppybook@gmail.com?bcc=maggiejaenicke@gmail.com,kwoodhouse1@gmail.com" target="_blank" rel="noopener noreferrer">{emailAddress}</a></p>
         </div>
     )
