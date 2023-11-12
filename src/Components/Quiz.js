@@ -12,7 +12,13 @@ function App() {
     setQuestion2(e.target.value)
   }
   const total = parseFloat(question1) + parseFloat(question2)
-  console.log(total)
+  let typeOfBat;
+  if (total === 2 || total === 4 || total === 6) {
+    typeOfBat = 'Fruit Bat'
+  }
+  if (total === 3 || total === 5) {
+    typeOfBat = 'Vampire Bat'
+  }
 
   return (
     <div className="App">
@@ -79,7 +85,7 @@ function App() {
             />
             <label htmlFor="Depends">Depends on the day</label>
             <p>
-                Total <strong>{total}</strong>
+                I am a... <strong>{typeOfBat}</strong>
             </p>
       </div>
     </div>
