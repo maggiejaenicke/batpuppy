@@ -9,6 +9,7 @@
 .tab-list-item {
   display: inline-block;
   list-style: none;
+  font-family: "Times New Roman";
   margin-bottom: -1px;
   padding: 0.5rem 0.75rem;
 }
@@ -16,6 +17,47 @@
   background-color: #EFE7F7;
   border: solid #ccc;
   border-width: 1px 1px 0 1px;
+  border-radius: 3px;
+  font-family: "Times New Roman";
+
+}
+
+.footer {
+  background-color: #EFE7F7;
+  font-size: 12px;
+  border-radius: 3px;
+  font-family: "Times New Roman";
+}
+.quiz {
+  font-size: 18px;
+  border-radius: 3px;
+  padding-bottom: 15px;
+  font-family: "Times New Roman";
+}
+
+.body-text {
+  font-size: 18px;
+  border-radius: 3px;
+  padding-bottom: 15px;
+  font-family: "Times New Roman";
+}
+
+.image {
+  padding-bottom: 15px;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-family: "Times New Roman";
+  font-size: 14px;
+  color: initial;
 }
 
 .App-logo {
