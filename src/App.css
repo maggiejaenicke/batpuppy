@@ -6,6 +6,90 @@
   padding-left: 0;
 }
 
+.quizHeader {
+  position: fixed;
+  font-family: "Times New Roman";
+  font-size: 18px;
+  right: 410px;
+}
+.question {
+  position: fixed;
+  background-color: #EFE7F7;
+  bottom: 530px;
+  right: 1025px;
+  top: 225px;
+  font-family: "Times New Roman";
+  font-size: 18px;
+
+}
+
+.innerQuestion {
+  position: fixed;
+  background-color: #EFE7F7;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  font-family: "Times New Roman";
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+
+}
+
+.answer {
+  position: fixed;
+  background-color: #EFE7F7;
+  right: 935px;
+  bottom: 450px;
+  top: 310px;
+  font-family: "Times New Roman";
+  font-size: 18px;
+
+}
+
+.innerAnswer {
+  position: fixed;
+  background-color: #EFE7F7;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  font-family: "Times New Roman";
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+
+
+}
+
+.quizImage {
+  position: fixed;
+  right: 370px;
+  bottom: 0px;
+  top: 110px;
+  padding-bottom: 145px;
+  padding-top: 100px;
+  
+}
+
+.nextButton {
+    position: fixed;
+    right: 700px;
+    bottom: 400px;
+    top: 410px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: #EFE7F7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+
+
 .tab-list-item {
   display: inline-block;
   list-style: none;
@@ -22,29 +106,40 @@
 
 }
 
+
 .footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #EFE7F7;
-  font-size: 12px;
-  border-radius: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
   font-family: "Times New Roman";
 }
+
+
 .quiz {
   font-size: 18px;
-  border-radius: 3px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   font-family: "Times New Roman";
 }
 
 .body-text {
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 3px;
   padding-bottom: 15px;
+  margin-right: 300px;
+  margin-left: 300px;  
   font-family: "Times New Roman";
 }
 
 .image {
   padding-bottom: 15px;
 }
+
 
 a.button {
   -webkit-appearance: button;
@@ -70,7 +165,8 @@ a.button {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-div {
+
+.mainContent {
   margin-right: 50px;
   margin-left: 50px;
 }

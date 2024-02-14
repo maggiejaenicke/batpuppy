@@ -23,16 +23,14 @@ export default function BatpuppyHome(props){
     }, [])
     return (
         <div class="footer">
-        <br></br>
         {/* <h1>This is Batpuppy's Home!</h1>
         <p>Puppy's name is {puppyName}</p>
         <p>I've clicked {counter} times</p>
         <button onClick={handleClick} style={{color: color}}>Change BP's name to Brad</button><br></br><br></br> */}
-        <p>Want to stay in the loop?</p>
+        {/* <p>Want to stay in the loop?</p> */}
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" class="button">Join the Batpuppy mailing list!</a>
-        <p> We'll send you news about our release date, pre-orders, events and more. We couldn't do it without you! </p>
+        {/* <p> We'll send you news about our release date, pre-orders, events and more. We couldn't do it without you! </p> */}
         <p>Questions? Reach out to us: <a href="mailto:batpuppybook@gmail.com?bcc=maggiejaenicke@gmail.com,kwoodhouse1@gmail.com" target="_blank" rel="noopener noreferrer">{emailAddress}</a></p>
-        <br></br>
         </div>
     )
 }
