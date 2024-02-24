@@ -95,7 +95,11 @@ function App() {
             />
         </div>
         <div label="Take the Batpuppy Quiz!">  
-            <div class="quizImage">
+          <div class="home-page">
+
+          <Quiz>
+          </Quiz>
+          <div class="quizImage">
                 <img 
                 src={QuizImg} 
                 alt="I love Batpuppy"
@@ -103,8 +107,7 @@ function App() {
                 height="400"
                 />
             </div>
-        <Quiz>
-        </Quiz>
+        </div>
         </div>
         
       </Tabs>
