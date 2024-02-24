@@ -7,30 +7,22 @@
 }
 
 .quizHeader {
-  /* position: fixed; */
   font-family: "Times New Roman";
-  font-size: 18px;
+  font-size: 20px;
   margin-right: -720px;
-  /* right: 415px;
-  top: 190px; */
 }
+
 .question {
-  /* position: fixed; */
   margin-right: -40px;
   margin-top: -13px;
+  margin-left: 5px;
   background-color: #EFE7F7;
-  /* bottom: 530px;
-  right: 1025px;
-  top: 225px; */
   font-family: "Times New Roman";
   font-size: 18px;
-
   border-radius: 5px;
-
 }
 
 .innerQuestion {
-  /* position: fixed; */
   background-color: #EFE7F7;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -44,20 +36,18 @@
 }
 
 .answer {
-  /* position: fixed; */
   background-color: #EFE7F7;
-  /* right: 935px;
-  bottom: 450px;
-  top: 310px; */
   margin-top: 25px;
   width: 300px;
   font-family: "Times New Roman";
   font-size: 18px;
+  margin-left: 50px;
+  width: 250px;
+  border-radius: 5px;
 
 }
 
 .innerAnswer {
-  /* position: fixed; */
   background-color: #EFE7F7;
   padding-bottom: 10px;
   padding-top: 25px;
@@ -72,28 +62,15 @@
 }
 
 .quizImage {
-  /* position: fixed; */
   margin-right: 5px;
+  margin-top: 5px;
   z-index: -1;
-
-  /* right: 370px;
-  bottom: 0px;
-  top: 110px; */
   padding-bottom: 145px;
   padding-top: 20px;
-  
 }
 
 .nextButton {
-    /* position: fixed; */
-    /* right: 700px;
-    bottom: 400px;
-    top: 410px; */
-    /* -webkit-appearance: button; */
-    /* -moz-appearance: button; */
-    /* appearance: button; */
     background-color: #EFE7F7;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; */
     border-color: #EFE7F7;
     margin-top: 30px;
     margin-right: -200px;
@@ -120,9 +97,7 @@
   border-width: 1px 1px 0 1px;
   border-radius: 3px;
   font-family: "Times New Roman";
-
 }
-
 
 .footer {
   position: fixed;
@@ -136,7 +111,6 @@
   font-size: 16px;
   font-family: "Times New Roman";
 }
-
 
 .quiz {
   font-size: 18px;
@@ -163,7 +137,7 @@
   margin-left: 20px;
 }
 
-.home-page {
+.inline-page {
   display: flex;
   justify-content: center;
   font-family: "Times New Roman";
@@ -174,7 +148,6 @@
 .image {
   padding-bottom: 15px;
 }
-
 
 a.button {
   -webkit-appearance: button;
