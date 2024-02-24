@@ -139,24 +139,39 @@
 }
 
 .homeText {
-  position: fixed;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-right: 15px;
-  padding-left: 15px;
-  right: 620px;
   width: 420px;
-  top: 220px;
-  font-family: "Times New Roman";
+  margin-top: 50px;
+  /* position: fixed; */
+  /* padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 15px; */
+  /* right: 620px; */
+  /* margin-left: 200px;
+  
+  /* top: 220px; */
+  /* font-family: "Times New Roman";
+  float: left; */
 }
 
 .homeImage {
-  position: fixed;
-  right: 290px;
+  margin-left: 20px;
+
+  /* position: fixed; */
+  /* right: 290px;
   bottom: 0px;
-  top: 90px;
-  padding-bottom: 145px;
-  padding-top: 100px;
+  top: 90px; */
+  /* padding-bottom: 145px;
+  padding-top: 00px;
+  clear: left */
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman";
+  margin-left: 10px;
+  margin-right: 10px
+
 }
 
 .image {
