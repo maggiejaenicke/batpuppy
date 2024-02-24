@@ -10,7 +10,8 @@
   position: fixed;
   font-family: "Times New Roman";
   font-size: 18px;
-  right: 410px;
+  right: 415px;
+  top: 190px;
 }
 .question {
   position: fixed;
@@ -131,9 +132,31 @@
   font-size: 16px;
   border-radius: 3px;
   padding-bottom: 15px;
-  margin-right: 300px;
-  margin-left: 300px;  
+  width: 500px;
+  margin: auto;
+  text-align: center;
   font-family: "Times New Roman";
+}
+
+.homeText {
+  position: fixed;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  right: 620px;
+  width: 420px;
+  top: 220px;
+  font-family: "Times New Roman";
+}
+
+.homeImage {
+  position: fixed;
+  right: 290px;
+  bottom: 0px;
+  top: 90px;
+  padding-bottom: 145px;
+  padding-top: 100px;
 }
 
 .image {

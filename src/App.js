@@ -44,8 +44,10 @@ function App() {
             </div>
       <Tabs>
         <div label="Home">
-        <div class="body-text">
-        Batpuppy is a project very close to our hearts. It is a children's book filled with love that's been in the works for the last three years. 
+        <div class="homeText">
+        <i>A little girl's new puppy has a big secret: a pair of bat wings! The two are best friends right away. But will that change when a family camping trip leads them to a flock of wild Batdogs?
+        <br></br><br></br>Batpuppy is a romping tale of adventure, love, and letting go.<br></br><br></br></i>
+        <hr></hr><br></br>We've been working on this book for the past three years. It's filled with love and learning and we're so excited to share it with you. 
         </div>
         {/* <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">Sign up</a> for the Batpuppy mailing list to stay up to date!</h3> */}
           <img 
@@ -53,6 +55,7 @@ function App() {
           alt="Batpuppy flying with girl"
           width="330"
           height="300"
+          class="homeImage"
           />
           </div>
         <div label="About the Author">

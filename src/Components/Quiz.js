@@ -50,7 +50,7 @@ function App() {
 <div className="App">
   <div class="quiz">
     <div class="quizHeader">
-      <strong> What kind of batpuppy am I?</strong><br></br><br></br>
+      What kind of batpuppy am I?<br></br><br></br>
     </div>
     {hello === 1 && 
     <div class="question">
@@ -91,7 +91,7 @@ function App() {
                 <label htmlFor="Depends">It depends</label><br></br><br></br>
         </div>
     </div>
-    <button class="nextButton" onClick=''>Next Question</button>
+    <button class="nextButton" onClick="">Next Question</button>
 
     {/* 
                 What's your favorite food?<br></br>
