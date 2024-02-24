@@ -39,12 +39,6 @@ function App() {
 
   const total = question1 + question2 + question3 + question4 + question5
   let typeOfBat;
-  if (total === 2 || total === 4 || total === 6) {
-    typeOfBat = 'Fruit Bat'
-  }
-  if (total === 3 || total === 5) {
-    typeOfBat = 'Vampire Bat'
-  }
 
   return (
 <div className="App">
