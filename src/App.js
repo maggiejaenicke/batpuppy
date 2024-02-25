@@ -62,29 +62,29 @@ function App() {
           </div>
         <div label="About the Author">
         <div class="body-text">
-        Katie Woodhouse was born and raised in Portland, OR. She studied creative writing at Macalester College in Saint Paul, MN, and graduated mid-pandemic in 2021. Since then she has been a woodworker, a preschool art teacher, a barista, and a writer whenever she has the chance. She currently lives in South Minneapolis with 2 black cats and 2 human people. If she were a batdog, she would live in the trees by Cedar Lake!
+        Katie Woodhouse was born and raised in Portland, Oregon. She studied creative writing at Macalester College and graduated in 2021. Since then she's been a woodworker, a preschool teacher, a barista, and a writer whenever she gets the chance. She currently lives in South Minneapolis with two black cats and two human people. If she were a batdog, she'd live in the trees by Cedar Lake!
         </div>
             <img 
             src={batpuppy_author} 
             alt="Katie Woodhouse"
-            width="380"
-            height="270"
-            />
+            width="250"
+            height="250"
+            /><br></br>
         </div>
         <div label="About the Illustrator">
-        <div class="body-text">
-        Maggie Jaenicke is from State College, PA, but has lived in the Twins Cities since 2017, where she attended Macalester College, graduating in 2021. She studied Geography and Environmental Studies and now works as a geospatial web developer. She spends most of her free time painting and print-making. Quite frankly, she would rather be a bat cat, but don't tell anyone!
-        </div>
-            <img 
-            src={batpuppy_illustrator} 
-            alt="Maggie Jaenicke"
-            width="380"
-            height="270"
-            />
+          <div class="body-text">
+            Maggie Jaenicke is from State College, Pennsylvania, but has lived in the Twin Cities since beginning college in 2017. She graduated from Macalester College with degrees in Geography and Environmental Studies and now works as a web developer. She spends most of her free time painting and printmaking. Quite frankly, she would rather be a batcat, but don't tell anyone!
+          </div>
+                <img 
+                src={batpuppy_illustrator} 
+                alt="Maggie Jaenicke"
+                width="250"
+                height="250"
+                />
         </div>
         <div label="Order the Book">
           <div class="body-text">
-            We will be conducting a preorder to estimate the number of copies to print! Preorder will close on [Date]. Expect to receive your copy by [Date]. Click the link below to visit our Etsy site where Batpuppy book lives.
+            We will be conducting a preorder to estimate the number of copies to print! Preorder will begin on [Date] and close on [Date]. Expect to receive your copy by [Date]. Click the link below to visit our Etsy site where Batpuppy book lives.
           </div>
           <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" class="button" style={{backgroundColor: '#EFE7F7', fontSize: '16px'}}>Shop Batpuppy</a>
             <br></br><br></br><img 
