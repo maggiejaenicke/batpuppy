@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+// import questions from "./questions";
 // const [activeQuestion, setActiveQuestion] = useState(0)
 // const [selectedAnswer, setSelectedAnswer] = useState('')
 
@@ -6,214 +7,337 @@ import { useState } from "react"
 //   setActiveQuestion((prev) => prev + 1)
 // }
 
+const questions = [
+  {
+      name: "Do you prefer spending time alone or with others?",
+      options: [
+          {
+              label: "Alone",
+              value: "A"
+          },
+          {
+              label: "With Others",
+              value: "B"
+          },
+          {
+              label: "It Depends",
+              value: "C"
+          }
+      ]
+  },
+  {
+      name: "What's your favorite food?",
+      options: [
+          {
+              label: "I'm a meat lover",
+              value: "D"
+          },
+          {
+              label: "I love fresh fruit!",
+              value: "E"
+          }
+      ]
+  }
+]
+
 function App() {
-  const hello = 1;
-  const [question1, setQuestion1] = useState("0")
+  const [questionIndex, setQuestionIndex] = useState(0);
+  const [outcomeString, setOutcomeString] = useState("");
+  const [selectedOption, setSelectedOption] = useState("");
 
-  const onOptionChange1 = e => {
-    setQuestion1(e.target.value)
-  }
-  const [question2, setQuestion2] = useState("0")
+  const handleNextQuestion = () => {
 
-  const onOptionChange2 = e => {
-    setQuestion2(e.target.value)
-  }
+    //if last one, do something else
+    setOutcomeString(outcomeString + selectedOption);
+    setQuestionIndex(questionIndex + 1);
+    console.log(outcomeString)
 
-  const [question3, setQuestion3] = useState("0")
-
-  const onOptionChange3 = e => {
-    setQuestion3(e.target.value)
   }
 
-  const [question4, setQuestion4] = useState("0")
-
-  const onOptionChange4 = e => {
-    setQuestion4(e.target.value)
+  const handleRadioSelect = (value) => {
+    setSelectedOption(value);
   }
+  // const hello = 1;
+  // const [question1, setQuestion1] = useState("0");
 
-  const [question5, setQuestion5] = useState("0")
+  // const onOptionChange1 = (e) => {
+  //   setQuestion1(e.target.value);
+  // };
+  // const [question2, setQuestion2] = useState("0");
 
-  const onOptionChange5 = e => {
-    setQuestion5(e.target.value)
-  }
+  // const onOptionChange2 = (e) => {
+  //   setQuestion2(e.target.value);
+  // };
 
-  const total = question1 + question2 + question3 + question4 + question5
-  let typeOfBat;
+  // const [question3, setQuestion3] = useState("0");
+
+  // const onOptionChange3 = (e) => {
+  //   setQuestion3(e.target.value);
+  // };
+
+  // const [question4, setQuestion4] = useState("0");
+
+  // const onOptionChange4 = (e) => {
+  //   setQuestion4(e.target.value);
+  // };
+
+  // const [question5, setQuestion5] = useState("0");
+
+  // const onOptionChange5 = (e) => {
+  //   setQuestion5(e.target.value);
+  // };
+
+  // const total = question1 + question2 + question3 + question4 + question5;
+  // let typeOfBat;
+
+
 
   return (
-<div className="App">
-  <div class="quiz">
-    <div class="quizHeader">
-      What kind of batpuppy am I?<br></br><br></br>
-    </div>
-    {hello === 1 && 
-    <div class="question">
-      <div class="innerQuestion">
-        Do you prefer spending time alone or with others?
-      </div>
-    </div>}
-
-    <div class="answer">
-        <div class="innerAnswer">
-                <input
-                    type="radio"
-                    name="question1"
-                    value="A"
-                    id="Introvert"
-                    checked={question1 === "A"}
-                    onChange={onOptionChange1}
-                />
-              
-                <label htmlFor="Introvert">Alone     </label>
-                <input
-                    type="radio"
-                    name="question1"
-                    value="B"
-                    id="Extrovert"
-                    checked={question1 === "B"}
-                    onChange={onOptionChange1}
-                />
-                <label htmlFor="Extrovert">With others     </label>
-                <input
-                    type="radio"
-                    name="question1"
-                    value="C"
-                    id="Depends"
-                    checked={question1 === "C"}
-                    onChange={onOptionChange1}
-                />
-                <label htmlFor="Depends">It depends</label><br></br><br></br>
+    <div className="App">
+      <div class="quiz">
+        <div class="quizHeader">
+          What kind of batpuppy am I?<br></br>
+          <br></br>
         </div>
+            <div class="question">
+              <div class="innerQuestion">{questions[questionIndex].name}</div>
+            </div>
+
+            {questions[questionIndex].options.map((option, index) => (
+              <div class="answer">
+                <div class="innerAnswer">
+                  <input
+                    type="radio"
+                    value={option.value}
+                    checked={selectedOption === option.value}
+                    onChange={() => handleRadioSelect(option.value)}
+                  />
+
+                  <label>{option.label}</label>
+
+                  <br></br>
+                  <br></br>
+                </div>
+              </div>
+            ))}
+        
+        {/* {hello === 1 && 
+        <div class="question">
+          <div class="innerQuestion">
+            Do you prefer spending time alone or with others?
+          </div>
+        </div>
+
+        <div class="answer">
+            <div class="innerAnswer">
+                    <input
+                        type="radio"
+                        name="question1"
+                        value="A"
+                        id="Introvert"
+                        checked={question1 === "A"}
+                        onChange={onOptionChange1}
+                    />
+                  
+                    <label htmlFor="Introvert">Alone     </label>
+                    <input
+                        type="radio"
+                        name="question1"
+                        value="B"
+                        id="Extrovert"
+                        checked={question1 === "B"}
+                        onChange={onOptionChange1}
+                    />
+                    <label htmlFor="Extrovert">With others     </label>
+                    <input
+                        type="radio"
+                        name="question1"
+                        value="C"
+                        id="Depends"
+                        checked={question1 === "C"}
+                        onChange={onOptionChange1}
+                    />
+                    <label htmlFor="Depends">It depends</label><br></br><br></br>
+            </div>
+        </div> */}
+
+        <button class="nextButton" onClick={handleNextQuestion}>
+          Next Question
+        </button>
+      </div>
     </div>
-    <button class="nextButton" onClick="">Next Question</button>
+  );
+  //   return (
+  // <div className="App">
+  //   <div class="quiz">
+  //     <div class="quizHeader">
+  //       What kind of batpuppy am I?<br></br><br></br>
+  //     </div>
+  //     {hello === 1 &&
+  //     <div class="question">
+  //       <div class="innerQuestion">
+  //         Do you prefer spending time alone or with others?
+  //       </div>
+  //     </div>}
 
-    {/* 
-                What's your favorite food?<br></br>
-                <input
-                    type="radio"
-                    name="question2"
-                    value="D"
-                    id="Meat"
-                    checked={question2 === "D"}
-                    onChange={onOptionChange2}
-                />
-                <label htmlFor="Meat">I'm a meat lover</label>
+  //     <div class="answer">
+  //         <div class="innerAnswer">
+  //                 <input
+  //                     type="radio"
+  //                     name="question1"
+  //                     value="A"
+  //                     id="Introvert"
+  //                     checked={question1 === "A"}
+  //                     onChange={onOptionChange1}
+  //                 />
 
-                <input
-                    type="radio"
-                    name="question2"
-                    value="E"
-                    id="Fruit"
-                    checked={question2 === "E"}
-                    onChange={onOptionChange2}
-                />
-                <label htmlFor="Fruit">I love fresh fruit!</label>
-                <br></br><br></br>
+  //                 <label htmlFor="Introvert">Alone     </label>
+  //                 <input
+  //                     type="radio"
+  //                     name="question1"
+  //                     value="B"
+  //                     id="Extrovert"
+  //                     checked={question1 === "B"}
+  //                     onChange={onOptionChange1}
+  //                 />
+  //                 <label htmlFor="Extrovert">With others     </label>
+  //                 <input
+  //                     type="radio"
+  //                     name="question1"
+  //                     value="C"
+  //                     id="Depends"
+  //                     checked={question1 === "C"}
+  //                     onChange={onOptionChange1}
+  //                 />
+  //                 <label htmlFor="Depends">It depends</label><br></br><br></br>
+  //         </div>
+  //     </div>
+  //     <button class="nextButton" onClick="">Next Question</button>
 
-                How would you rather spend your winter?<br></br>
-                <input
-                    type="radio"
-                    name="question3"
-                    value="G"
-                    id="Cozy"
-                    checked={question3 === "G"}
-                    onChange={onOptionChange3}
-                />
-                <label htmlFor="Cozy">Cozied up where I am</label>
+  //     {/*
+  //                 What's your favorite food?<br></br>
+  //                 <input
+  //                     type="radio"
+  //                     name="question2"
+  //                     value="D"
+  //                     id="Meat"
+  //                     checked={question2 === "D"}
+  //                     onChange={onOptionChange2}
+  //                 />
+  //                 <label htmlFor="Meat">I'm a meat lover</label>
 
-                <input
-                    type="radio"
-                    name="question3"
-                    value="H"
-                    id="Warm"
-                    checked={question3 === "H"}
-                    onChange={onOptionChange3}
-                />
-                <label htmlFor="Warm">I'm heading somewhere warm!</label>
+  //                 <input
+  //                     type="radio"
+  //                     name="question2"
+  //                     value="E"
+  //                     id="Fruit"
+  //                     checked={question2 === "E"}
+  //                     onChange={onOptionChange2}
+  //                 />
+  //                 <label htmlFor="Fruit">I love fresh fruit!</label>
+  //                 <br></br><br></br>
 
-                <input
-                    type="radio"
-                    name="question3"
-                    value="I"
-                    id="AlreadyWarm"
-                    checked={question3 === "I"}
-                    onChange={onOptionChange3}
-                />
-                <label htmlFor="AlreadyWarm">I already live somewhere warm!</label><br></br><br></br>
+  //                 How would you rather spend your winter?<br></br>
+  //                 <input
+  //                     type="radio"
+  //                     name="question3"
+  //                     value="G"
+  //                     id="Cozy"
+  //                     checked={question3 === "G"}
+  //                     onChange={onOptionChange3}
+  //                 />
+  //                 <label htmlFor="Cozy">Cozied up where I am</label>
 
-                What region would you most want to live in?<br></br>
-                <input
-                    type="radio"
-                    name="question4"
-                    value="J"
-                    id="NorthAmerica"
-                    checked={question4 === "J"}
-                    onChange={onOptionChange4}
-                />
-                <label htmlFor="NorthAmerica">North America</label>
+  //                 <input
+  //                     type="radio"
+  //                     name="question3"
+  //                     value="H"
+  //                     id="Warm"
+  //                     checked={question3 === "H"}
+  //                     onChange={onOptionChange3}
+  //                 />
+  //                 <label htmlFor="Warm">I'm heading somewhere warm!</label>
 
-                <input
-                    type="radio"
-                    name="question4"
-                    value="K"
-                    id="Africa"
-                    checked={question4 === "K"}
-                    onChange={onOptionChange4}
-                />
-                <label htmlFor="Africa">Africa</label>
+  //                 <input
+  //                     type="radio"
+  //                     name="question3"
+  //                     value="I"
+  //                     id="AlreadyWarm"
+  //                     checked={question3 === "I"}
+  //                     onChange={onOptionChange3}
+  //                 />
+  //                 <label htmlFor="AlreadyWarm">I already live somewhere warm!</label><br></br><br></br>
 
-                <input
-                    type="radio"
-                    name="question4"
-                    value="L"
-                    id="PacificIslands"
-                    checked={question4 === "L"}
-                    onChange={onOptionChange4}
-                />
-                <label htmlFor="PacificIslands">Pacific Islands</label><br></br><br></br>
+  //                 What region would you most want to live in?<br></br>
+  //                 <input
+  //                     type="radio"
+  //                     name="question4"
+  //                     value="J"
+  //                     id="NorthAmerica"
+  //                     checked={question4 === "J"}
+  //                     onChange={onOptionChange4}
+  //                 />
+  //                 <label htmlFor="NorthAmerica">North America</label>
 
-                What's your happy place?<br></br>
-                <input
-                    type="radio"
-                    name="question5"
-                    value="M"
-                    id="Forest"
-                    checked={question5 === "M"}
-                    onChange={onOptionChange5}
-                />
-                <label htmlFor="Forest">Forest</label>
+  //                 <input
+  //                     type="radio"
+  //                     name="question4"
+  //                     value="K"
+  //                     id="Africa"
+  //                     checked={question4 === "K"}
+  //                     onChange={onOptionChange4}
+  //                 />
+  //                 <label htmlFor="Africa">Africa</label>
 
-                <input
-                    type="radio"
-                    name="question5"
-                    value="N"
-                    id="Caves"
-                    checked={question5 === "N"}
-                    onChange={onOptionChange5}
-                />
-                <label htmlFor="Caves">Caves</label>
+  //                 <input
+  //                     type="radio"
+  //                     name="question4"
+  //                     value="L"
+  //                     id="PacificIslands"
+  //                     checked={question4 === "L"}
+  //                     onChange={onOptionChange4}
+  //                 />
+  //                 <label htmlFor="PacificIslands">Pacific Islands</label><br></br><br></br>
 
-                <input
-                    type="radio"
-                    name="question5"
-                    value="O"
-                    id="City"
-                    checked={question5 === "O"}
-                    onChange={onOptionChange5}
-                />
-                <label htmlFor="City">The city</label> */}
-                {/* <p>
-                    I am a... <strong>{total}</strong>
-                </p> */}
-  </div>
-</div>
-  )
+  //                 What's your happy place?<br></br>
+  //                 <input
+  //                     type="radio"
+  //                     name="question5"
+  //                     value="M"
+  //                     id="Forest"
+  //                     checked={question5 === "M"}
+  //                     onChange={onOptionChange5}
+  //                 />
+  //                 <label htmlFor="Forest">Forest</label>
+
+  //                 <input
+  //                     type="radio"
+  //                     name="question5"
+  //                     value="N"
+  //                     id="Caves"
+  //                     checked={question5 === "N"}
+  //                     onChange={onOptionChange5}
+  //                 />
+  //                 <label htmlFor="Caves">Caves</label>
+
+  //                 <input
+  //                     type="radio"
+  //                     name="question5"
+  //                     value="O"
+  //                     id="City"
+  //                     checked={question5 === "O"}
+  //                     onChange={onOptionChange5}
+  //                 />
+  //                 <label htmlFor="City">The city</label> */}
+  //                 {/* <p>
+  //                     I am a... <strong>{total}</strong>
+  //                 </p> */}
+  //   </div>
+  // </div>
+  //   )
 }
 
-export default App
-
-
-
+export default App;
 
 // export default function Quiz(props){
 //     const [counter, setCounter] = useState(0)
@@ -224,14 +348,13 @@ export default App
 //         //access the values from the radio buttons and add them up
 //         setResults(results)
 //         var ele = document.getElementsByName('question1');
- 
+
 //             for (i = 0; i < ele.length; i++) {
 //                 if (ele[i].checked)
 //                     document.getElementById("result").innerHTML
 //                         = "Gender: " + ele[i].value;
 //             }
 //             console.log('question 1', document.getElementById('question1').value);
-    
 
 //     }
 //     const random_hex_color_code = () => {
@@ -244,7 +367,6 @@ export default App
 //     }, [counter])
 
 //     //console.log(document.getElementById('rates').value)
-
 
 //     useEffect(()=>{
 

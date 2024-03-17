@@ -28,6 +28,7 @@ function App() {
                 alt="Momma's left shoe"
                 width="110"
                 height="110"
+                class="shoe"
                 />
                 <img
                 src={pear}
@@ -44,7 +45,7 @@ function App() {
             </div>
       <Tabs>
         <div label="Home" >
-        <div class="inline-page">
+        <div class="home-inline-page">
         <div class="homeText">
         <i>A little girl's new puppy has a big secret: a pair of bat wings! The two are best friends right away. But will that change when a family camping trip leads them to a flock of wild Batdogs?
         <br></br><br></br>Batpuppy is a romping tale of adventure, love, and letting go.<br></br><br></br></i>

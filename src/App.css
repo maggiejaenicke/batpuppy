@@ -145,6 +145,14 @@
   margin-right: 10px
 }
 
+.home-inline-page {
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman";
+  margin-left: 10px;
+  margin-right: 10px
+}
+
 .image {
   padding-bottom: 15px;
 }
@@ -177,7 +185,9 @@ a.button {
 .mainContent {
   margin-right: 50px;
   margin-left: 50px;
+  display: inline-block
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -200,4 +210,27 @@ a.button {
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 600px) {
+  /* CSS styles for smaller screens */
+  .home-inline-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Times New Roman";
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 200px
+  }
+
+  .homeImage {
+    margin-left: 0px;
+  }
+
+
+  .shoe {
+    break-after: always;
+  }
+
 }
