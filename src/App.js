@@ -74,7 +74,7 @@ function App() {
         </div>
         <div label="About the Illustrator">
           <div class="body-text">
-            Maggie Jaenicke is from State College, Pennsylvania, but has lived in the Twin Cities since beginning college in 2017. She graduated from Macalester College with degrees in Geography and Environmental Studies and now works as a web developer. She spends most of her free time painting and printmaking. Quite frankly, she would rather be a batcat, but don't tell anyone!
+            Maggie Jaenicke is from State College, Pennsylvania, but has lived in the Twin Cities since beginning college in 2017. She graduated from Macalester College with degrees in Geography and Environmental Studies and now works as a web developer (as you can probably tell from this cutting-edge website). She spends most of her free time painting and printmaking. Quite frankly, she would rather be a batcat, but don't tell anyone!
           </div>
                 <img 
                 src={batpuppy_illustrator} 
