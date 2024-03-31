@@ -4,8 +4,9 @@ import outcomeCrosswalk from "./outcomeCrosswalk.json";
 
 function Modal({ outcomeString, closeModal }) {
     const getResultFromCrosswalk = (outcomeString) => {
+        const trimmedOutcomeString = outcomeString.slice(0, -1);
         for (const key in outcomeCrosswalk) {
-            if (key === outcomeString) {
+            if (key === trimmedOutcomeString) {
                 return outcomeCrosswalk[key];
             }
         }

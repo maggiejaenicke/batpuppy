@@ -15,11 +15,12 @@ function App() {
       setModalOpen(true);
     }
     setOutcomeString(outcomeString + selectedOption);
-    console.log(outcomeString + selectedOption)
   };
 
   const handleRadioSelect = (value) => {
+    const updatedOutcomeString = outcomeString.replace(selectedOption, '');
     setSelectedOption(value);
+    setOutcomeString(updatedOutcomeString + value);
   };
 
   const closeModal = () => {
