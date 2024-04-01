@@ -9,7 +9,7 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleNextQuestion = () => {
-    if (questionIndex < questions.length - 1 ) {
+    if (questionIndex < questions.length - 1) {
       setQuestionIndex(questionIndex + 1);
     } else {
       setModalOpen(true);
@@ -26,38 +26,39 @@ function App() {
   const closeModal = () => {
     setModalOpen(false);
   };
-  
 
   let buttonText;
   if (questionIndex < questions.length - 1) {
     buttonText = "Next Question";
   } else {
-    buttonText = "Show my results!";
+    buttonText = "What am I?";
   }
 
   return (
     <div className="App">
       <div className="quiz">
         <div className="quizHeader">
-          What kind of batpuppy am I?<br /><br />
+          <b>What kind of batpuppy am I?</b><br /><br />
         </div>
-        <div className="question">
+        {/* <div className="question"> */}
           <div className="innerQuestion">{questions[questionIndex].name}</div>
+        {/* </div> */}
+        <div className="answerContainer"> {/* Set display to flex */}
+          {questions[questionIndex].options.map((option, index) => (
+            // <div className="answer" key={index}>
+              <div className="innerAnswer">
+                <input
+                  type="radio"
+                  value={option.value}
+                  checked={selectedOption === option.value}
+                  onChange={() => handleRadioSelect(option.value)}
+                />
+                <label>{option.label}</label>
+                <br /><br />
+              </div>
+            // </div>
+          ))}
         </div>
-        {questions[questionIndex].options.map((option, index) => (
-          <div className="answer" key={index}>
-            <div className="innerAnswer">
-              <input
-                type="radio"
-                value={option.value}
-                checked={selectedOption === option.value}
-                onChange={() => handleRadioSelect(option.value)}
-              />
-              <label>{option.label}</label>
-              <br /><br />
-            </div>
-          </div>
-        ))}
         <button className="nextButton" onClick={handleNextQuestion}>
           {buttonText}
         </button>

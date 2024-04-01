@@ -1,172 +1,52 @@
 const QuizBank = [
     {
-        question: "I can readily define success.",
-        id: 0,
-        answerA: "Agree",
-        idNextQuestionA: 1,
-        answerB: "Disagree",
-        idNextQuestionB: 14
+        batpuppy: "Hoary Batpuppy",
+        description: "Hoary batpuppy is blah blah "
     },
     {
-        question: "I am temperamental.",
-        id: 1,
-        answerA: "Agree",
-        idNextQuestionA: 2,
-        answerB: "Disagree",
-        idNextQuestionB: 13
+        batpuppy: "Canyon Batpuppy",
+        description: "Canyon Batpuppy is bloo blee"
     },
     {
-        question: "I readily compare myself to others or my past self.",
-        id: 2,
-        answerA: "Yes",
-        idNextQuestionA: 3,
-        answerB: "No",
-        idNextQuestionB: 11
+        batpuppy: "Tricolored Batpuppy",
+        description: "Tricolored Batpuppy is heheheh"
     },
     {
-        question: "I lean towards discussing moral issues.",
-        id: 3,
-        answerA: "Yes",
-        idNextQuestionA: 5,
-        answerB: "No",
-        idNextQuestionB: 4,
+        batpuppy: "Mexican Free-Tailed Batpuppy",
+        description: "Mexican Free-Tailed Batpuppy is wooeeee"
     },
     {
-        question: "I am more...",
-        id: 4,
-        answerA: "Impulsive",
-        drinkResultA: 8,
-        answerB: "Disciplined",
-        drinkResultB: 1,
+        batpuppy: "African Yellow Batpuppy",
+        description: "African Yellow Batpuppy is ho ho ho"
     },
     {
-        question: "I prefer to...",
-        id: 5,
-        answerA: "help people",
-        drinkResultA: 2,
-        answerB: "leave people to their own devices",
-        drinkResultB: 1
+        batpuppy: "Jamaican Fruit Batpuppy",
+        description: "Jamaican Fruit Batpuppy is lol"
     },
     {
-        question: "I am known as a golden child or role model.",
-        id: 6,
-        answerA: "Yes",
-        drinkResultA: 3,
-        answerB: "No",
-        drinkResultB: 6
+        batpuppy: "Little Brown Batpuppy",
+        description: "Little Brown Batpuppy is like hey"
     },
     {
-        question: "I generally trust myself.",
-        id: 7,
-        answerA: "Agree",
-        drinkResultA: 5,
-        answerB: "Disagree",
-        drinkResultB: 6
+        batpuppy: "Mariana Fruit Batpuppy",
+        description: "Mariana Fruit Batpuppy is like ho"
     },
     {
-        question: "A clean appearance is important to me.",
-        id: 8,
-        answerA: "Agree",
-        idNextQuestionA: 6,
-        answerB: "Disagree",
-        idNextQuestionB: 7
+        batpuppy: "Flying Fox Batpuppy",
+        description: "Flying Fox Batpuppy woah woah woah"
     },
     {
-        question: "An orderly appearance is important to me.",
-        id: 9,
-        answerA: "Agree",
-        drinkResultA: 3,
-        answerB: "Disagree",
-        drinkResultB: 2
+        batpuppy: "Straw-Colored Fruit Batpuppy",
+        description: "Straw-Colored Fruit Batpuppy lmfao"
     },
     {
-        question: "I tend to be...",
-        id: 10,
-        answerA: "decisive",
-        drinkResultA: 2,
-        answerB: "indecisive",
-        drinkResultB: 9
+        batpuppy: "Egyptian Fruit Batpuppy",
+        description: "Egyptian Fruit Batpuppy is like hey guys"
     },
     {
-        question: "In relationships, I am more often like...",
-        id: 11,
-        answerA: "an older sibling",
-        idNextQuestionA: 9,
-        answerB: "a younger sibling",
-        idNextQuestionB: 10
+        batpuppy: "Vampire Batpuppy",
+        description: "Vampire Batpuppy is like yolo"
     },
-    {
-        question: "I can spend a lot of time on social media.",
-        id: 12,
-        answerA: "Agree",
-        drinkResultA: 3,
-        answerB: "Disagree",
-        drinkResultB: 5
-    },
-    {
-        question: "I prefer to...",
-        id: 13,
-        answerA: "help people",
-        idNextQuestionA: 11,
-        answerB: "leave people to their own devices",
-        idNextQuestionB: 8
-    },
-    {
-        question: "I prefer...",
-        id: 14,
-        answerA: "familiar patterns",
-        idNextQuestionA: 13,
-        answerB: "new adventures",
-        idNextQuestionB: 15
-    },
-    {
-        question: "I am inclined to be...",
-        id: 15,
-        answerA: "envious or competitive",
-        idNextQuestionA: 16,
-        answerB: "well-wishing",
-        idNextQuestionB: 17
-    },
-    {
-        question: "I prefer to use my energy to sort out my...",
-        id: 16,
-        answerA: "tasks or plans",
-        idNextQuestionA: 18,
-        answerB: "thoughts or feelings",
-        idNextQuestionB: 19
-    },
-    {
-        question: "I prefer...",
-        id: 17,
-        answerA: "solo work",
-        idNextQuestionA: 12,
-        answerB: "social settings",
-        idNextQuestionB: 20
-    },
-    {
-        question: "I can spend a lot of time on social media.",
-        id: 18,
-        answerA: "Agree",
-        drinkResultA: 3,
-        answerB: "Disagree",
-        drinkResultB: 5
-    },
-    {
-        question: "I am more interested in exploring...",
-        id: 19,
-        answerA: "truth/reality",
-        drinkResultA: 5,
-        answerB: "love",
-        drinkResultB: 4
-    },
-    {
-        question: "I am more interested in...",
-        id:20,
-        answerA: "long term community",
-        drinkResultA: 2,
-        answerB: "independence or short term community",
-        drinkResultB: 7
-    }
 ]
 
 export default QuizBank;

@@ -33,15 +33,15 @@ const questions = [
         name: "How would you rather spend your winter?",
         options: [
             {
-                label: "Cozied up where I am",
+                label: "Cozied up",
                 value: "G"
             },
             {
-                label: "I'm heading somewhere warm!",
+                label: "Seeking warmth",
                 value: "H"
             },
             {
-                label: "I already live somewhere warm!",
+                label: "Already warm",
                 value: "I"
             }
         ]
@@ -75,7 +75,7 @@ const questions = [
                 value: "N"
             },
             {
-                label: "City",
+                label: "Cities",
                 value: "O"
             }
         ]
