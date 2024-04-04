@@ -23,7 +23,7 @@ function App() {
     return (
         <div>
             <div className="home-inline-page" style={{marginBottom: '20px'}}>
-                <div className="homeText" style={{marginTop: '30px'}}>
+                <div className="homeText" style={{marginTop: '15px'}}>
                     <h3 style={{color: '#795F80'}}>About the Author</h3>
                     Katie Woodhouse was born and raised in Portland, Oregon. She studied creative writing at Macalester College and graduated in 2021. Since then she's been a woodworker, a preschool teacher, a barista, and a writer whenever she gets the chance. She currently lives in South Minneapolis with two black cats and two human people. If she were a batdog, she'd live in the trees by Cedar Lake!
                 </div>
@@ -33,13 +33,13 @@ function App() {
                     width="250"
                     height="250"
                     className='homeImage'
-                    style={{marginTop: '30px'}}
+                    style={{marginTop: '15px'}}
                 />
             </div>
             {isMobile ? (
             <div className="home-inline-page">
 
-            <div className="homeText" style={{marginTop: '30px'}}>
+            <div className="homeText" style={{marginTop: '-60px'}}>
                 <h3 style={{color: '#795F80'}}>About the Illustrator</h3>
                 Maggie Jaenicke is from State College, Pennsylvania, but has lived in the Twin Cities since beginning college in 2017. She graduated from Macalester College with degrees in Geography and Environmental Studies and now works as a web developer (as you can probably tell from this cutting-edge website). She spends most of her free time painting and printmaking. Quite frankly, she would rather be a batcat, but don't tell anyone!
             </div>
@@ -60,7 +60,7 @@ function App() {
                 width="250"
                 height="250"
                 className='homeImage'
-                style={{marginTop: '30px', marginRight: '10px'}}
+                style={{marginTop: '30px', marginRight: '10px', marginBottom: '20px'}}
             />
             <div className="homeText" style={{marginTop: '30px'}}>
                 <h3 style={{color: '#795F80'}}s>About the Illustrator</h3>

@@ -136,7 +136,7 @@ input[type="radio"] {
   font-size: 18px;
   border-radius: 3px;
   padding-bottom: 15px;
-  width: 490px;
+  width: 500px;
   margin: auto;
   text-align: center;
   font-family: 'Calibri';
@@ -258,9 +258,13 @@ a.button:hover {
       font-size: 18px;
   }
 
+  .body-text {
+    width: 300px;
+  }
+
   .inBed {
-    width: 450px;
-    height: 300px
+    width: 350px;
+    height: 250px
   }
 
   .shoe {

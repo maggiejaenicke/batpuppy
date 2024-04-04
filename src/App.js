@@ -30,16 +30,16 @@ function App() {
     <div className="App">
       {isMobile ? (
         <div className="mainContent">
-          <img src={bear} alt="Thea's best bear" width="80" height="80" />
-          <img src={shoe} alt="Momma's left shoe" width="80" height="80" className="shoe" /><br></br>
-          <img src={pear} alt="Pear" width="80" height="80" style={{marginLeft: '40px'}}/>
-          <img src={cockroach} alt="Cockroach" width="130" height="95" />
+          <img src={bear} alt="Thea's best bear" width="80" height="80" style={{marginRight: '10px', marginBottom: '-5px'}} />
+          <img src={shoe} alt="Momma's left shoe" width="80" height="80" className="shoe" style={{marginBottom: '-5px'}}/><br></br>
+          <img src={pear} alt="Pear" width="77" height="77" style={{marginLeft: '40px'}}/>
+          <img src={cockroach} alt="Cockroach" width="128" height="93" />
         </div>
         ) : (
         <div className="mainContent">
-          <img src={bear} alt="Thea's best bear" width="110" height="110" />
-          <img src={shoe} alt="Momma's left shoe" width="110" height="110" className="shoe" />
-          <img src={pear} alt="Pear" width="110" height="110" />
+          <img src={bear} alt="Thea's best bear" width="110" height="110" style={{marginLeft: '7px'}}/>
+          <img src={shoe} alt="Momma's left shoe" width="110" height="110" className="shoe" style={{marginLeft: '7px'}}/>
+          <img src={pear} alt="Pear" width="107" height="107" style={{marginLeft: '7px'}}/>
           <img src={cockroach} alt="Cockroach" width="160" height="125" />
         </div>
         )}
