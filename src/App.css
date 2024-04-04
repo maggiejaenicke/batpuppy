@@ -247,6 +247,9 @@ a.button:hover {
 
   .homeImage {
     margin-left: 0px;
+    height: 290px;
+    width: 300px;
+    padding-bottom: 100px;
   }
   
   .homeText {
@@ -255,6 +258,10 @@ a.button:hover {
       font-size: 18px;
   }
 
+  .inBed {
+    width: 450px;
+    height: 300px
+  }
 
   .shoe {
     break-after: always;

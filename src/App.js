@@ -30,10 +30,10 @@ function App() {
     <div className="App">
       {isMobile ? (
         <div className="mainContent">
-          <img src={bear} alt="Thea's best bear" width="110" height="110" />
-          <img src={shoe} alt="Momma's left shoe" width="110" height="110" className="shoe" /><br></br>
-          <img src={pear} alt="Pear" width="110" height="110" style={{marginLeft: '40px'}}/>
-          <img src={cockroach} alt="Cockroach" width="160" height="125" />
+          <img src={bear} alt="Thea's best bear" width="80" height="80" />
+          <img src={shoe} alt="Momma's left shoe" width="80" height="80" className="shoe" /><br></br>
+          <img src={pear} alt="Pear" width="80" height="80" style={{marginLeft: '40px'}}/>
+          <img src={cockroach} alt="Cockroach" width="130" height="95" />
         </div>
         ) : (
         <div className="mainContent">
@@ -79,12 +79,13 @@ function App() {
             alt="Batpuppy in Bed"
             width="550"
             height="400"
+            class="inBed"
           />
         </div>
         {isMobile ? (
           <div label="Take the Batpuppy Quiz!">
             <div className="inline-page">
-              <p>Sorry! You must be on a desktop computer to take the quiz.</p>
+              <p>Sorry! You must be on a desktop computer to take the quiz.</p><br></br><br></br>
             </div>
           </div>
         ) : (
