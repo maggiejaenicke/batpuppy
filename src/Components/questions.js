@@ -37,7 +37,7 @@ const questions = [
                 value: "G"
             },
             {
-                label: "Seeking warmth",
+                label: "Migrating",
                 value: "H"
             },
             {

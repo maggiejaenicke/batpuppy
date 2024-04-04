@@ -48,6 +48,9 @@ function App() {
         <div label="Home">
           <div className="home-inline-page" style={{marginBottom: '20px'}}>
             <div className="homeText">
+              <h1 style={{color: '#795F80'}}><i>BATPUPPY</i></h1>
+              Written by Katie Woodhouse<br></br>
+              Illustrated by Maggie Jaenicke<br></br><br></br>
               <i>A little girl's new puppy has a big secret: a pair of bat wings! The two are best friends right away. But will that change when a family camping trip leads them to a flock of wild batdogs?
                 <br></br><br></br></i>Batpuppy <i>is a romping tale of adventure, love, and letting go.<br></br><br></br></i>
               <hr></hr><br></br>We've been working on this book for the past three years. It's filled with love and learning and we're so excited to share it with you.
@@ -56,8 +59,8 @@ function App() {
             <img
               src={batpuppy_cover}
               alt="Batpuppy flying with girl"
-              width="430"
-              height="400"
+              width="450"
+              height="440"
               className="homeImage"
               style={{marginBottom: '100px'}}
             />
@@ -67,15 +70,15 @@ function App() {
         <AboutTheMakers></AboutTheMakers>
         </div>
         <div label="Order the Book">
-          <div className="body-text">
-            We will be conducting a preorder to estimate the number of copies to print! Preorder will begin on [Date] and close on [Date]. Expect to receive your copy by [Date]. Click the link below to visit our Etsy site where Batpuppy book lives.
+          <div className="body-text" style={{paddingBottom: '0px', marginTop: '50px'}}>
+            We will be conducting a preorder to estimate the number of copies to print! It may be your only chance to get the book. Join our  <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank">mailing list</a> or check back soon to know when preorder will open.
           </div>
-          <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy</a>
+          {/* <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy</a> */}
           <br></br><br></br><img
             src={batpuppy_in_bed}
             alt="Batpuppy in Bed"
-            width="450"
-            height="350"
+            width="550"
+            height="400"
           />
         </div>
         {isMobile ? (

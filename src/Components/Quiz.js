@@ -37,8 +37,8 @@ function App() {
   return (
     <div className="App">
       <div className="quiz">
-        <div className="quizHeader">
-          <b>What kind of batpuppy am I?</b><br /><br />
+        <div  className="quizHeader">
+          <b style={{color: '#795F80'}}>What kind of batpuppy am I?</b><br /><br/>
         </div>
         {/* <div className="question"> */}
           <div className="innerQuestion">{questions[questionIndex].name}</div>

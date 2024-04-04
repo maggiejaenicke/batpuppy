@@ -21,9 +21,10 @@ const batpuppyDescription = batpuppyInfo ? batpuppyInfo.description : "Make sure
     return (
     <div className="modal">
         <div className="modalContent">
-            <p>You are a...</p>
-            <h3>{batpuppy}</h3>
+            <p><i>You are a...</i></p>
+            <h3 style={{color: '#795F80', fontSize: '24px'}}>{batpuppy}!</h3>
             <p>{batpuppyDescription}</p>
+            <p style={{fontSize: '14px'}}><i>What if my batpuppy doesn't seem exactly like me? You're uniquely you! No batpuppy can match your one-of-a-kind personality : )</i></p>
             <button onClick={closeModal}>Close</button>
         </div>
     </div>

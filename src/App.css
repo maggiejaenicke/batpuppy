@@ -10,6 +10,7 @@
   font-family: 'Calibri';
   font-size: 20px;
   margin-right: -720px;
+  color: '#795F80';
 }
 
 .innerQuestion {
@@ -143,13 +144,13 @@ input[type="radio"] {
 
 .homeText {
   width: 470px;
-  margin-top: 70px;
   font-size: 18px;
   font-family: 'Calibri';
 }
 
 .homeImage {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .inline-page {
