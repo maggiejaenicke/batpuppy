@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/batpuppy/static/css/main.0f142c31.css",
+    "main.js": "/batpuppy/static/js/main.4e99b448.js",
+    "static/js/787.0bd3828f.chunk.js": "/batpuppy/static/js/787.0bd3828f.chunk.js",
+    "static/media/QuizBox.png": "/batpuppy/static/media/QuizBox.f22c40b6a41b2e486357.png",
+    "static/media/batpuppyInBed.png": "/batpuppy/static/media/batpuppyInBed.3af42aef2ca77721daea.png",
+    "static/media/bear.png": "/batpuppy/static/media/bear.281390b3a1e49d52e8f0.png",
+    "static/media/Batpuppy_Author.png": "/batpuppy/static/media/Batpuppy_Author.44dc9a6037ea56dfc49f.png",
+    "static/media/pear.png": "/batpuppy/static/media/pear.ec9f7f67e805b7a25748.png",
+    "static/media/shoe.png": "/batpuppy/static/media/shoe.24155f40a7ce534ba541.png",
+    "static/media/batpuppy_cover.png": "/batpuppy/static/media/batpuppy_cover.3d29a91be63962105dcb.png",
+    "static/media/Batpuppy_Illustrator.png": "/batpuppy/static/media/Batpuppy_Illustrator.a196b236fc5dc58f79f9.png",
+    "static/media/cockroach.png": "/batpuppy/static/media/cockroach.0ba22f102f1e9c09bb86.png",
+    "index.html": "/batpuppy/index.html",
+    "main.0f142c31.css.map": "/batpuppy/static/css/main.0f142c31.css.map",
+    "main.4e99b448.js.map": "/batpuppy/static/js/main.4e99b448.js.map",
+    "787.0bd3828f.chunk.js.map": "/batpuppy/static/js/787.0bd3828f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f142c31.css",
+    "static/js/main.4e99b448.js"
+  ]
+}
