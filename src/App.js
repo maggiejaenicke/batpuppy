@@ -46,7 +46,7 @@ function App() {
 
       <Tabs>
         <div label="Home">
-          <div className="home-inline-page" style={{marginBottom: '20px'}}>
+          <div className="home-inline-page" style={{marginBottom: '40px'}}>
             <div className="homeText">
               <h1 style={{color: '#795F80'}}><i>BATPUPPY</i></h1>
               Written by Katie Woodhouse<br></br>
@@ -77,8 +77,7 @@ function App() {
           <br></br><br></br><img
             src={batpuppy_in_bed}
             alt="Batpuppy in Bed"
-            width="550"
-            height="400"
+            width="550em"
             class="inBed"
           />
         </div>

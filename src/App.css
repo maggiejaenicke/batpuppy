@@ -148,6 +148,12 @@ input[type="radio"] {
   font-family: 'Calibri';
 }
 
+.makerText {
+  width: 470px;
+  font-size: 18px;
+  font-family: 'Calibri';
+}
+
 .homeImage {
   margin-left: 20px;
   margin-top: 20px;
@@ -172,6 +178,14 @@ input[type="radio"] {
 
 .image {
   padding-bottom: 15px;
+}
+
+.illustrator {
+  margin-bottom: 200px !important
+}
+
+.inBed {
+  margin-bottom: 200px !important
 }
 
 a.button {
@@ -257,6 +271,12 @@ a.button:hover {
       margin-top: 10px;
       font-size: 18px;
   }
+
+  .makerText {
+    width: 470px;
+    margin-top: 10px;
+    font-size: 18px;
+}
 
   .body-text {
     width: 300px;
