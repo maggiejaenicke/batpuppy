@@ -72,8 +72,8 @@ function App() {
         <div label="Order the Book">
           <div className="body-text" style={{paddingBottom: '0px', marginTop: '50px'}}>
             We will be conducting a preorder to estimate the number of copies to print, which will be open from April 16 through April 30. That will be your main opportunity to support this endeavor and get your copy of <em>Batpuppy</em>! See you then! 
-          </div>
-          {/* <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy</a> */}
+          </div><br></br>
+          <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy</a>
           <br></br><br></br><img
             src={batpuppy_in_bed}
             alt="Batpuppy in Bed"
