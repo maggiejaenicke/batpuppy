@@ -71,9 +71,11 @@ function App() {
         </div>
         <div label="Order the Book">
           <div className="body-text" style={{paddingBottom: '0px', marginTop: '50px'}}>
+            <b>Update on 4/18: Etsy account has been deactivated for a mysterious reason. Please join the <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">mailing list</a>  for updates.</b><br></br><br></br>
+            Most orders that have already been placed seem to have gone through and will continue to ship as expected. Otherwise, you will receive a message from Etsy. We <b>will</b> find an avenue for you to reorder the book, whether it be through Etsy or elsewhere.<br></br><br></br>
             We will be conducting a preorder to estimate the number of copies to print, which will be open from April 16 through April 30. That will be your main opportunity to support this endeavor and get your copy of <em>Batpuppy</em>! See you then! 
           </div><br></br>
-          <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy</a>
+          {/* <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy</a> */}
           <br></br><br></br><img
             src={batpuppy_in_bed}
             alt="Batpuppy in Bed"
