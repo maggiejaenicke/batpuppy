@@ -180,6 +180,15 @@ input[type="radio"] {
   padding-bottom: 15px;
 }
 
+.flex-horizontal {
+  display: flex;
+  flex-direction: row-reverse; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .illustrator {
   margin-bottom: 200px !important
 }
@@ -198,12 +207,32 @@ a.button {
   padding: 15px 20px;
   text-decoration: none;
   font-family: 'Calibri';
-  font-size: 18px;
+  font-size: 20px;
   color: initial;
 }
 
 a.button:hover {
-  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+
+.shopButton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-family: 'Calibri';
+  font-size: 20px;
+  color: initial;
+}
+
+.shopButton:hover {
+  background-color: #dcd0eb;
+  cursor: pointer;
 }
 
 .App-logo {
@@ -286,6 +315,8 @@ a.button:hover {
     width: 350px;
     height: 250px
   }
+
+
 
   .shoe {
     break-after: always;

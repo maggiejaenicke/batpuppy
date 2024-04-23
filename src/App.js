@@ -71,17 +71,20 @@ function App() {
         </div>
         <div label="Order the Book">
           <div className="body-text" style={{paddingBottom: '0px', marginTop: '50px'}}>
-            We are currently conducting a preorder to estimate the number of copies to print, which will be open from April 16 through April 30. That will be your main opportunity to support this endeavor and get your copy of <em>Batpuppy</em>! <br></br><br></br> 
-
+            We are currently conducting a preorder to estimate the number of copies to print, which will be open from April 16 through April 30. That will be your main opportunity to support this endeavor and get your copy of <em>Batpuppy</em>!<br></br><br></br> 
+{/* 
             Update on 4/18: Maggie's Etsy account has been deactivated for a mysterious reason. Please join the <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">mailing list</a>  for updates.<br></br><br></br>
             Most orders that have already been placed have gone through and will continue to ship as expected. Otherwise, you will have received a message from Etsy. If you are unsure of the status of your order, feel free to <a href="mailto:batpuppybook@gmail.com?bcc=maggiejaenicke@gmail.com,kwoodhouse1@gmail.com" target="_blank" rel="noopener noreferrer">send us an email</a> and we can check for you!<br></br><br></br>
 
-            <b>Update on 4/19: We have recieved word from Etsy that Maggie's account was suspended in error, but the listings have yet to be reactivated. While we wait for Etsy listings to be reactivated, we will be accepting orders via <a href="https://docs.google.com/forms/d/e/1FAIpQLScbb8lyyTYDUxqYjwad5zjG1IllVm6BL3NTdbZ9APa1rOl6OA/viewform" target="_blank" rel="noopener noreferrer">Google Form</a>  and Venmo. We will continue to leave this option open once the Etsy listings are reopened.</b><br></br><br></br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbb8lyyTYDUxqYjwad5zjG1IllVm6BL3NTdbZ9APa1rOl6OA/viewform" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy (via Venmo)</a><br></br><br></br>
-            If you don't use Venmo, we are hopeful that our Etsy listings will be back up in the next few days, and we will inform the mailing list when this option is available again. <br></br><br></br>
-            <b>Thank you so much for your support and patience through this frustrating experience!</b>
+            <b>Update on 4/19: We have recieved word from Etsy that Maggie's account was suspended in error, but the listings have yet to be reactivated. While we wait for Etsy listings to be reactivated, we will be accepting orders via <a href="https://docs.google.com/forms/d/e/1FAIpQLScbb8lyyTYDUxqYjwad5zjG1IllVm6BL3NTdbZ9APa1rOl6OA/viewform" target="_blank" rel="noopener noreferrer">Google Form</a>  and Venmo. We will continue to leave this option open once the Etsy listings are reopened.</b><br></br><br></br> */}
+            <b>Shop <em>Batpuppy!</em></b><br></br><br></br>
+            <div className="flex-horizontal">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbb8lyyTYDUxqYjwad5zjG1IllVm6BL3NTdbZ9APa1rOl6OA/viewform" target="_blank" className="shopButton" style={{ backgroundColor: '#EFE7F7', fontSize: '18px' }}>Venmo</a><br></br><br></br>
+            <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="shopButton" style={{ backgroundColor: '#EFE7F7', fontSize: '18px' }}>Etsy</a>
+            </div>
+            {/* If you don't use Venmo, we are hopeful that our Etsy listings will be back up in the next few days, and we will inform the mailing list when this option is available again. <br></br><br></br>
+            <b>Thank you so much for your support and patience through this frustrating experience!</b> */}
           </div>
-          {/* <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="button" style={{ backgroundColor: '#EFE7F7', fontSize: '16px' }}>Shop Batpuppy</a> */}
 
           <img
             src={batpuppy_in_bed}
