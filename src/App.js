@@ -72,6 +72,7 @@ function App() {
         <div label="Order the Book">
           <div className="body-text" style={{paddingBottom: '0px', marginTop: '50px'}}>
             Our preorder period has come to a close. Thank you all for your support! For future updates, join our <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">mailing list. </a><br></br><br></br> 
+            <em>Batpuppy</em> is currently for sale at <a href="https://juststevesbeanfactory.com/" target="_blank">JS Bean Factory</a> in Saint Paul, MN. Stop by to grab a copy and a cup of coffee! 
 {/* 
             Update on 4/18: Maggie's Etsy account has been deactivated for a mysterious reason. Please join the <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">mailing list</a>  for updates.<br></br><br></br>
             Most orders that have already been placed have gone through and will continue to ship as expected. Otherwise, you will have received a message from Etsy. If you are unsure of the status of your order, feel free to <a href="mailto:batpuppybook@gmail.com?bcc=maggiejaenicke@gmail.com,kwoodhouse1@gmail.com" target="_blank" rel="noopener noreferrer">send us an email</a> and we can check for you!<br></br><br></br>
