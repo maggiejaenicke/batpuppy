@@ -71,18 +71,16 @@ function App() {
         </div>
         <div label="Order the Book">
           <div className="body-text" style={{paddingBottom: '0px', marginTop: '50px'}}>
-            Our preorder period has come to a close. Thank you all for your support! For future updates, join our <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">mailing list. </a><br></br><br></br> 
-            <em>Batpuppy</em> is currently for sale at <a href="https://juststevesbeanfactory.com/" target="_blank">JS Bean Factory</a> in Saint Paul, MN. Stop by to grab a copy and a cup of coffee! 
+            We are currently selling copies of <em>Batpuppy</em> in limited quanity on <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" rel="noopener noreferrer">Etsy</a>. This is your opportunity to grab a copy ahead of the holidays, though we may get more copies printed in the future.<br></br><br></br> 
+            <em>Batpuppy</em> is also for sale in person at <a href="https://juststevesbeanfactory.com/" target="_blank">JS Bean Factory</a> in Saint Paul, MN. Stop by to grab a copy and a cup of coffee! 
 {/* 
             Update on 4/18: Maggie's Etsy account has been deactivated for a mysterious reason. Please join the <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">mailing list</a>  for updates.<br></br><br></br>
             Most orders that have already been placed have gone through and will continue to ship as expected. Otherwise, you will have received a message from Etsy. If you are unsure of the status of your order, feel free to <a href="mailto:batpuppybook@gmail.com?bcc=maggiejaenicke@gmail.com,kwoodhouse1@gmail.com" target="_blank" rel="noopener noreferrer">send us an email</a> and we can check for you!<br></br><br></br>
 
             <b>Update on 4/19: We have recieved word from Etsy that Maggie's account was suspended in error, but the listings have yet to be reactivated. While we wait for Etsy listings to be reactivated, we will be accepting orders via <a href="https://docs.google.com/forms/d/e/1FAIpQLScbb8lyyTYDUxqYjwad5zjG1IllVm6BL3NTdbZ9APa1rOl6OA/viewform" target="_blank" rel="noopener noreferrer">Google Form</a>  and Venmo. We will continue to leave this option open once the Etsy listings are reopened.</b><br></br><br></br> */}
-            {/* <b>Shop <em>Batpuppy!</em></b><br></br><br></br>
-            <div className="flex-horizontal">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbb8lyyTYDUxqYjwad5zjG1IllVm6BL3NTdbZ9APa1rOl6OA/viewform" target="_blank" className="shopButton" style={{ backgroundColor: '#EFE7F7', fontSize: '18px' }}>Venmo</a><br></br><br></br>
-            <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="shopButton" style={{ backgroundColor: '#EFE7F7', fontSize: '18px' }}>Etsy</a> */}
-            {/* </div> */}
+            <br></br><br></br><div className="flex-horizontal">
+            <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" className="shopButton" style={{ backgroundColor: '#EFE7F7', fontSize: '18px' }}>Shop Batpuppy</a>
+            </div>
             {/* If you don't use Venmo, we are hopeful that our Etsy listings will be back up in the next few days, and we will inform the mailing list when this option is available again. <br></br><br></br>
             <b>Thank you so much for your support and patience through this frustrating experience!</b> */}
           </div>
