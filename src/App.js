@@ -71,7 +71,7 @@ function App() {
         </div>
         <div label="Order the Book">
           <div className="body-text" style={{paddingBottom: '0px', marginTop: '50px'}}>
-            We are currently selling copies of <em>Batpuppy</em> in limited quanity on <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" rel="noopener noreferrer">Etsy</a>. This is your opportunity to grab a copy ahead of the holidays, though we may get more copies printed in the future.<br></br><br></br> 
+            We are currently selling copies of <em>Batpuppy</em> in limited quantity on <a href="https://www.etsy.com/shop/MississippiMossShop" target="_blank" rel="noopener noreferrer">Etsy</a>. This is your opportunity to grab a copy ahead of the holidays, though we may get more copies printed in the future.<br></br><br></br> 
             <em>Batpuppy</em> is also for sale in person at <a href="https://juststevesbeanfactory.com/" target="_blank">JS Bean Factory</a> in Saint Paul, MN. Stop by to grab a copy and a cup of coffee! 
 {/* 
             Update on 4/18: Maggie's Etsy account has been deactivated for a mysterious reason. Please join the <a href="https://docs.google.com/forms/d/e/1FAIpQLScNpMEr-deodbKQIALfk4WUQxp7O0Sfpr4PaYLaoFe7ICJlQw/viewform" target="_blank" rel="noopener noreferrer">mailing list</a>  for updates.<br></br><br></br>
